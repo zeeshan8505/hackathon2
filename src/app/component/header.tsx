@@ -1,5 +1,6 @@
 import Topheader from "./topheader";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -10,25 +11,25 @@ const Header = () => {
       <Topheader />
       <header className="bg-gray-100 border-b py-4 px-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-gray-800 flex items-center">
-          <img src="Logo Icon.png" alt="Logo" className="w-8 h-8 mr-2" />
+          <Image src="Logo Icon.png" alt="Logo" width={50} height={50} className="w-8 h-8 mr-2" />
           Comforty
         </div>
         <nav className="hidden md:flex space-x-6 text-gray-600">
-          <a href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-blue-500">
             Home
-          </a>
-          <a href="/shop" className="hover:text-blue-500">
+          </Link>
+          <Link href="/shop" className="hover:text-blue-500">
             Shop
-          </a>
-          <a href="/product" className="hover:text-blue-500">
+          </Link>
+          <Link href="/product" className="hover:text-blue-500">
             Product
-          </a>
-          <a href="/pages" className="hover:text-blue-500">
+          </Link>
+          <Link href="/pages" className="hover:text-blue-500">
             Pages
-          </a>
-          <a href="/about" className="hover:text-blue-500">
+          </Link>
+          <Link href="/about" className="hover:text-blue-500">
             About
-          </a>
+          </Link>
         </nav>
         <div className="flex items-center space-x-6">
           <span className="text-blue-500 font-medium">

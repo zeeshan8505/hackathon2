@@ -1,4 +1,4 @@
-// components/FeaturedProducts.js
+import Image from "next/image";
 
 const FeaturedProducts = () => {
     const products = [
@@ -16,7 +16,7 @@ const FeaturedProducts = () => {
                     <div key={product.id} className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
                         <h3 className="text-xl font-semibold text-center mb-4">{product.name}</h3>
                         <p className="text-green-500 text-sm text-center mb-4">New</p>
-                        <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-lg mb-4" />
+                        <Image src={product.image} alt={product.name} width={100} height={100} className="w-full h-48 object-cover rounded-lg mb-4" />
                         <p className="text-red-600 text-lg font-bold text-center">
                             ${product.newPrice} <span className="text-gray-500 line-through">${product.oldPrice}</span>
                         </p>

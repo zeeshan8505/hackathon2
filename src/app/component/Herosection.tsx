@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const HeroSection = () => {
     return (
       <section className="relative bg-gray-50 py-16 px-6 lg:px-16">
@@ -17,9 +19,12 @@ const HeroSection = () => {
             </a>
           </div>
           <div className="lg:w-1/2">
-            <img
+            <Image
               src="/Product Image.png" 
               alt="Chair"
+              width={100}
+              height={100}
+              
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
